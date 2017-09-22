@@ -4,16 +4,16 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Step;
-import net.gmbh.solutions.ui.GoogleSearchPage;
+import net.gmbh.solutions.ui.ManageUserPage;
 
-public class OpenTheApplication implements Task {
+public class OpenTheManageUserApplication implements Task {
 
-    GoogleSearchPage googleSearchPage;
+    ManageUserPage manageUserPage;
 
     @Step("Open the application")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Open.browserOn().the(googleSearchPage)
+                Open.browserOn().the(manageUserPage)
         );
     }
 }
