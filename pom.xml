@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>groupId</groupId>
-    <artifactId>artifactId</artifactId>
+    <artifactId>serenity-assignment</artifactId>
     <version>version</version>
     <packaging>jar</packaging>
 
