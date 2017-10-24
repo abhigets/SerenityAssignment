@@ -26,7 +26,7 @@ public class SearchArticleBmcTest {
 
     Actor anna = Actor.named("Anna");
 
-    @Managed(uniqueSession = true, driver = "chrome")
+    @Managed(uniqueSession = true,driver = "chrome")
     public WebDriver herBrowser;
 
     @Steps
