@@ -2,6 +2,7 @@ package test.weatherchecker.tasks;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.thucydides.core.annotations.Step;
 
@@ -23,7 +24,9 @@ public class GetWeatherDetails implements Task {
         actor.attemptsTo(
                 Enter.theValue(postCode)
                         .into(WeatherCheckerPage.SEARCH_BOX)
-                        .thenHit(ENTER)
+        );
+        actor.attemptsTo(
+                Click.on(WeatherCheckerPage.SEARCH_BUTTON)
         );
     }
 

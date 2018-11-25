@@ -1,11 +1,12 @@
 # testFireDemoSerenity
 
 ### Framework used
-This project is test automation of https://www.biomedcentral.com/ using serenity automation framework using Screen Play Design Pattern
+This project is test automation of @DefaultUrl("https://serene-mountain-14043.herokuapp.com") using serenity automation framework using Screen Play Design Pattern
 
 
 ### Running test
 ```sh
+$ geckodriver &
 $ mvn clean verify
 ```
 
