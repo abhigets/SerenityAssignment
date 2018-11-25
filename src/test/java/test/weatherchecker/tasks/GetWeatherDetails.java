@@ -30,7 +30,7 @@ public class GetWeatherDetails implements Task {
         );
     }
 
-    public static GetWeatherDetails ByPostCode(String postCode) {
+    public static GetWeatherDetails byPostCode(String postCode) {
         return instrumented(GetWeatherDetails.class, postCode);
     }
 
