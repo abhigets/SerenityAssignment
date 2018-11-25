@@ -40,19 +40,15 @@ After running the test serenity reports will be generated at following location
 ```
 # Assignment 2
 Q : Suppose you want to run some of these test in a development pipeline thats independent from the backend pipeline. Explain how you could approach this:
-
-  1. What techniques,framework or tools you might thing using
-  2. How you would go abount integrating this framework with a CI pipeline.
+  * What techniques,framework or tools you might thing using
+  * How you would go abount integrating this framework with a CI pipeline.
 
 1. To run few of the test in development pipeline one can use following approach
-
-  a. cucumber supports tags e.g. “@SmokeTests" can be associated with a scenario in feature file
-  b. Junit tags e.g. @WithTag("SmokeTests") can be associate to junit test.
+  * cucumber supports tags e.g. “@SmokeTests" can be associated with a scenario in feature file
+  * Junit tags e.g. @WithTag("SmokeTests") can be associate to junit test.
   
 2. As I have already used maven we can trigger above annoted test cases from command line arguments of junit or cucumber tags can be used
-
- a. Cucumber :  -Dcucumber.options="--tags @SmokeTests"
- b. Junit : -Dtags="color:blue"
+  * Cucumber :  -Dcucumber.options="--tags @SmokeTests"
+  * Junit : -Dtags="color:blue"
 3. And then one can trigger above test with command line arguments with maven on CI [Jenkins add a downstream job/ pipleline step ]
-
- a. mvn clean verify -Dtags="color:blue"
+  * mvn clean verify -Dtags="color:blue"
