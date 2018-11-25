@@ -12,7 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <serenity.version>1.5.3</serenity.version>
+        <serenity.version>2.0.18</serenity.version>
         <webdriver.driver>firefox</webdriver.driver>
     </properties>
 
@@ -84,7 +84,7 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>1.7.0</version>
+            <version>3.11.1</version>
         </dependency>
     </dependencies>
     <build>
@@ -92,14 +92,14 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.18.1</version>
+                <version>3.0.0-M1</version>
                 <configuration>
                     <skip>true</skip>
                 </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.18.1</version>
+                <version>3.0.0-M1</version>
                 <configuration>
                     <includes>
                         <include>**/*Test.java</include>

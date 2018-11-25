@@ -9,6 +9,8 @@ buildNumber.properties
 .mvn/timing.properties
 .idea
 serenity-assignment.iml
-
+.DS_Store
+.gradle/
+build/
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar

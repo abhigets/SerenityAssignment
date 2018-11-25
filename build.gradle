@@ -9,7 +9,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath("net.serenity-bdd:serenity-gradle-plugin:1.1.26-rc.3")
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.18")
     }
 }
 
@@ -19,12 +19,12 @@ apply plugin: 'idea'
 apply plugin: 'net.serenity-bdd.aggregator'
 
 dependencies {
-    compile 'net.serenity-bdd:serenity-core:1.1.26-rc.3'
-    compile 'net.serenity-bdd:serenity-junit:1.1.26-rc.3'
-    compile 'net.serenity-bdd:serenity-screenplay:1.1.26-rc.3'
-    compile 'net.serenity-bdd:browse-the-web:1.1.26-rc.3'
+    compile 'net.serenity-bdd:serenity-core:2.0.18'
+    compile 'net.serenity-bdd:serenity-junit:2.0.18'
+    compile 'net.serenity-bdd:serenity-screenplay:2.0.18'
+    compile 'net.serenity-bdd:browse-the-web:2.0.18'
     testCompile('junit:junit:4.12')
-    compile('org.assertj:assertj-core:1.7.0')
+    compile('org.assertj:assertj-core:3.11.1')
     compile('com.googlecode.lambdaj:lambdaj:2.3.3')
 }
 gradle.startParameter.continueOnFailure = true

@@ -1,19 +1,19 @@
-package test.springernature.tasks;
+package test.weatherchecker.tasks;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Step;
-import test.springernature.ui.BMCHomePage;
+import test.weatherchecker.ui.WeatherChecker;
 
-public class OpenBMCApplication implements Task {
+public class OpenWeatherApplication implements Task {
 
-    BMCHomePage BMCHomePage;
+    WeatherChecker WeatherChecker;
 
     @Step("Open the application")
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Open.browserOn().the(BMCHomePage)
+                Open.browserOn().the(WeatherChecker)
         );
     }
 }

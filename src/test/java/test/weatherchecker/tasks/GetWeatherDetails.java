@@ -1,0 +1,34 @@
+package test.weatherchecker.tasks;
+
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Enter;
+import net.thucydides.core.annotations.Step;
+
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+import static org.openqa.selenium.Keys.ENTER;
+
+import test.weatherchecker.ui.WeatherCheckerPage;
+
+public class GetWeatherDetails implements Task {
+
+    private final String postCode;
+
+    protected GetWeatherDetails(String postCode) {
+        this.postCode = postCode;
+    }
+
+    @Step("GetWeatherDetails for #postcode")
+    public <T extends Actor> void performAs(T actor) {
+        actor.attemptsTo(
+                Enter.theValue(postCode)
+                        .into(WeatherCheckerPage.SEARCH_BOX)
+                        .thenHit(ENTER)
+        );
+    }
+
+    public static GetWeatherDetails ByPostCode(String postCode) {
+        return instrumented(GetWeatherDetails.class, postCode);
+    }
+
+}
