@@ -38,11 +38,13 @@ After running the test serenity reports will be generated at following location
 ```sh
 <ProjectDir>/target/site/serenity/index.html
 ```
+___
 # Assignment 2
 Q : Suppose you want to run some of these test in a development pipeline thats independent from the backend pipeline. Explain how you could approach this:
   * What techniques,framework or tools you might thing using
   * How you would go abount integrating this framework with a CI pipeline.
 
+#### Answer
 1. To run few of the test in development pipeline one can use following approach
   * cucumber supports tags e.g. “@SmokeTests" can be associated with a scenario in feature file
   * Junit tags e.g. @WithTag("SmokeTests") can be associate to junit test.
